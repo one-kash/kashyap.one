@@ -40,12 +40,12 @@ img {
   border-radius: 10px;
   width: 450px;
   cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
 }
 
 .button:hover {
-  background-color: #FAF9F6;
-  color: black;
+  background-color: rgba(255, 255, 255, 0.08);
+  color: white;
   transform: translateY(-4px);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
@@ -64,12 +64,12 @@ img {
   border-radius: 10px;
   width: 550px;
   cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
 }
 
 .button2:hover {
-  background-color: #FAF9F6;
-  color: black;
+  background-color: rgba(255, 255, 255, 0.08);
+  color: white;
   transform: translateY(-4px);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
@@ -88,12 +88,12 @@ img {
   border-radius: 10px;
   width: 450px;
   cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
 }
 
 .button3:hover {
-  background-color: #FAF9F6;
-  color: black;
+  background-color: #1f6a7a;
+  color: white;
   transform: translateY(-4px);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
@@ -112,12 +112,12 @@ img {
   border-radius: 10px;
   width: 450px;
   cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
 }
 
 .button4:hover {
-  background-color: #FAF9F6;
-  color: black;
+  background-color: #d9391a;
+  color: white;
   transform: translateY(-4px);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
@@ -137,12 +137,12 @@ img {
   border-radius: 10px;
   width: 450px;
   cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
 }
 
 .button5:hover {
-  background-color: #FAF9F6;
-  color: black;
+  background-color: #1a8fc9;
+  color: white;
   transform: translateY(-4px);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
@@ -162,12 +162,12 @@ img {
   border-radius: 10px;
   width: 450px;
   cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
 }
 
 .buttonbook:hover {
   background-color: #ff7e00;
-  color: black;
+  color: white;
   transform: translateY(-4px);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
@@ -186,12 +186,12 @@ img {
   border-radius: 10px;
   width: 450px;
   cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
 }
 
 .buttonlabs:hover {
-  background-color: #FAF9F6;
-  color: black;
+  background-color: #3cbf63;
+  color: white;
   transform: translateY(-4px);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
@@ -210,7 +210,7 @@ img {
   border-radius: 10px;
   width: 450px;
   cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
 }
 
 .buttononekash:hover {
