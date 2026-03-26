@@ -230,11 +230,14 @@ img {
 
 
 .tagline {
-  font-family: 'Ubuntu Mono', 'Courier New', monospace;
-  font-size: 28px;
+  font-family: 'Ubuntu';
+  font-size: 20px;
   color: #e4e4e7;
   letter-spacing: 2px;
   margin-top: 8%;
+  width: 450px;
+  display: inline-block;
+  text-align: center;
 }
 
 .tagline .prompt {
