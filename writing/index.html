@@ -241,22 +241,27 @@
     </script>
 
     <link rel="icon" type="image/x-icon" href="/img/profile.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Instrument+Serif&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style.css" />
     <style>
         .writing-container {
             max-width: 640px;
             margin: 0 auto;
             padding: 2rem 1.5rem;
+            position: relative;
+            animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
         }
 
         .back-link {
-            color: rgba(255,255,255,0.5);
+            color: #8a8279;
             text-decoration: none;
-            font-size: 16px;
+            font-size: 0.88rem;
         }
 
         .back-link:hover {
-            color: white;
+            color: #f0ece6;
         }
 
         .writing-header {
@@ -265,22 +270,24 @@
         }
 
         .writing-header h1 {
-            font-size: 24px;
-            font-weight: 700;
+            font-family: 'Instrument Serif', Georgia, serif;
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: #f0ece6;
             margin-bottom: 0.25rem;
         }
 
         .writing-header p {
-            color: rgba(255,255,255,0.5);
-            font-size: 16px;
+            color: #8a8279;
+            font-size: 0.88rem;
             margin-bottom: 0.5rem;
         }
 
         .newsletter-link {
             display: inline-block;
-            color: #0077b5;
+            color: #2a7c6f;
             text-decoration: none;
-            font-size: 15px;
+            font-size: 0.85rem;
             margin-bottom: 2rem;
         }
 
@@ -294,30 +301,40 @@
         }
 
         .article-list li {
-            border-bottom: 1px solid rgba(255,255,255,0.1);
+            border-bottom: 1px solid rgba(240, 236, 230, 0.08);
             padding: 1.25rem 0;
+            animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
         }
+
+        .article-list li:nth-child(1) { animation-delay: 0.1s; }
+        .article-list li:nth-child(2) { animation-delay: 0.15s; }
+        .article-list li:nth-child(3) { animation-delay: 0.2s; }
+        .article-list li:nth-child(4) { animation-delay: 0.25s; }
+        .article-list li:nth-child(5) { animation-delay: 0.3s; }
+        .article-list li:nth-child(6) { animation-delay: 0.35s; }
+        .article-list li:nth-child(7) { animation-delay: 0.4s; }
+        .article-list li:nth-child(8) { animation-delay: 0.45s; }
 
         .article-list li:last-child {
             border-bottom: none;
         }
 
         .article-list a {
-            color: white;
+            color: #f0ece6;
             text-decoration: none;
-            font-size: 18px;
+            font-size: 1rem;
             font-weight: 500;
-            line-height: 1.4;
+            line-height: 1.5;
             display: block;
         }
 
         .article-list a:hover {
-            color: #7c5cff;
+            color: #2a7c6f;
         }
 
         .article-date {
-            color: rgba(255,255,255,0.4);
-            font-size: 14px;
+            color: #8a8279;
+            font-size: 0.8rem;
             margin-top: 0.35rem;
         }
     </style>

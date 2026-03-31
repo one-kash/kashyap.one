@@ -1,97 +1,113 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap');
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-  background-color: #0a0a0f;
-  background-image:
-    radial-gradient(ellipse 80% 50% at 20% 40%, rgba(124, 92, 255, 0.08), transparent),
-    radial-gradient(ellipse 60% 40% at 80% 60%, rgba(52, 211, 153, 0.05), transparent);
-  background-attachment: fixed;
-  color: white;
-  font-family: 'Ubuntu';
-  font-size: 20px;
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #141210;
+  color: #f0ece6;
+  font-size: 18px;
   -webkit-font-smoothing: antialiased;
-  margin: 0;
+  min-height: 100vh;
 }
 
-img {
-  border-radius: 50%;
+body::before {
+  content: '';
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: 60vh;
+  background: radial-gradient(ellipse 70% 50% at 50% 0%, rgba(42, 124, 111, 0.06), transparent);
+  pointer-events: none;
 }
+
+img { border-radius: 50%; }
 
 .links {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: 14px;
   padding: 0 24px;
+  position: relative;
 }
 
-/* Base button */
+/* Staggered entrance */
+.links > * {
+  animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+.links > :nth-child(1) { animation-delay: 0s; }
+.links > :nth-child(2) { animation-delay: 0.05s; }
+.links > :nth-child(3) { animation-delay: 0.1s; }
+.links > :nth-child(4) { animation-delay: 0.15s; }
+.links > :nth-child(5) { animation-delay: 0.2s; }
+.links > :nth-child(6) { animation-delay: 0.25s; }
+.links > :nth-child(7) { animation-delay: 0.3s; }
+.links > :nth-child(8) { animation-delay: 0.35s; }
+
+.name {
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #f0ece6;
+  margin-top: 8%;
+  margin-bottom: 2px;
+}
+
+.tagline {
+  font-size: 0.85rem;
+  color: #8a8279;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Buttons */
 .btn {
-  font-family: 'Ubuntu';
-  background-color: transparent;
-  color: white;
-  border: 1px solid white;
-  padding: 10px 25px;
+  font-family: 'DM Sans', sans-serif;
+  background: #1c1917;
+  color: #f0ece6;
+  border: 1px solid rgba(240, 236, 230, 0.08);
+  padding: 12px 24px;
   text-align: center;
   text-decoration: none;
   display: block;
-  font-size: 20px;
+  font-size: 1rem;
   border-radius: 10px;
   width: 100%;
   max-width: 450px;
   cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
 }
 
 .btn:hover {
-  background-color: rgba(255, 255, 255, 0.08);
-  color: white;
-  transform: translateY(-4px);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  border-color: rgba(42, 124, 111, 0.3);
+  box-shadow: 0 0 20px rgba(42, 124, 111, 0.06);
+  color: #f0ece6;
+  text-decoration: none;
 }
 
-/* Color modifiers */
-.btn--linkedin    { background: #0077b5; border-color: #0077b5; }
-.btn--linkedin:hover { background: #1a8fc9; }
+.btn svg { opacity: 0.5; transition: opacity 0.25s ease; }
+.btn:hover svg { opacity: 0.8; }
 
-.btn--newsletter  { background: #0077b5; border-color: #0077b5; }
-.btn--newsletter:hover { background: #1a8fc9; }
-
-.btn--projects    { background: #08872B; border-color: #08872B; }
-.btn--projects:hover { background: #0a9e33; }
-
-.btn--book-aws    { background: #FF9900; border-color: #FF9900; }
-.btn--book-aws:hover { background: #ffad33; }
-
-.btn--book-azure  { background: #0078d4; border-color: #0078d4; }
-.btn--book-azure:hover { background: #1a8fe6; }
-
-.btn--credly      { background: #ff6b00; border-color: #ff6b00; }
-.btn--credly:hover { background: #ff8533; }
-
+/* Footer */
 .footer {
-  font-family: 'Ubuntu';
-  bottom: 0;
-  background-color: transparent;
-  color: gray;
+  font-family: 'DM Sans', sans-serif;
+  background: transparent;
+  color: #8a8279;
   text-align: center;
-  font-size: 15px;
+  font-size: 0.85rem;
   padding: 3px;
 }
 
-.tagline {
-  font-family: 'Ubuntu';
-  font-size: 20px;
-  color: #e4e4e7;
-  letter-spacing: 2px;
-  margin-top: 4%; margin-bottom: 32px;
-  max-width: 450px;
-  width: 100%;
-  display: inline-block;
-  text-align: center;
+/* Animation */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-.tagline .prompt {
-  color: #28c840;
-  font-weight: 700;
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-delay: 0s !important;
+    transition-duration: 0.01ms !important;
+  }
 }
